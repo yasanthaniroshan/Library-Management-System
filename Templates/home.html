@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management - Home</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    {% csrf_token %}
+</head>
+<body>
+    {% include 'header.html' %}
+
+    <section class="section">
+        <h2>View List of Books</h2>
+        <p>View all the books in the library.</p>
+        <a href="{% url 'viewBookList' %}" class="action-button">Go to List</a>
+    </section>
+
+    <section class="section">
+        <h2>Add Book</h2>
+        <p>Add a new book to the library.</p>
+        <a href="{% url 'addBook' %}" class="action-button">Add Book</a>
+    </section>
+
+    <section class="section">
+        <h2>Delete Book</h2>
+        <p>Delete an existing book from the library.</p>
+        <a href="{% url 'deleteBook' %}" class="action-button">Delete Book</a>
+    </section>
+
+    <section class="section">
+        <h2>View a Book</h2>
+        <p>View detailed information about a specific book.</p>
+        <a href="{% url 'searchBook' %}" class="action-button">View Book</a>
+    </section>
+
+    {% include 'footer.html' %}
+    <script src="{% static 'js/home.js' %}"></script>
+</body>
+</html>
