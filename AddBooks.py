@@ -27,7 +27,7 @@ with open("booklist.txt") as csvfile:
         if copies.isnumeric():  
             book = Book.objects.create(title=name,author=author,genre=genre,copies=copies)
             book.save()
-            print("Book added")
+            print(f"Book added - {name}")
         
         
             
