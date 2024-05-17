@@ -1,4 +1,5 @@
 # Library Management System
+![Library](static/img/Library.png)
 ![Python](https://img.shields.io/badge/Python-3.10-green)
 ![Django](https://img.shields.io/badge/Django-5.0.0-blue)
 
