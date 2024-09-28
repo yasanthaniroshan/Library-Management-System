@@ -80,6 +80,8 @@ body.exceeds-normal-size footer {
 body {
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 body::-webkit-scrollbar {
